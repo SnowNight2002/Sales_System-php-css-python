@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 1040px;
+    padding: 0px;
+    font-family: "Times New Roman";
+    font-size: 30px;
+}
+
+/*left content*/
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 10px;
+}
+
+.companyName{/*company name*/
+    font-size: 25px;
+    font-family: "Comic Sans MS";
+    justify-content: center;
+    color: black;
+    padding-left: 75px;
+    position: absolute;
+    top: 30px;
+}
+
+.systemName{/*system name*/
+    font-size: 25px;
+    font-family: "Comic Sans MS";
+    justify-content: center;
+    color: black;
+    padding-left: 75px;
+    position: absolute;
+    top: 60px;
+}
+
+li.item img.logo{ /*company logo*/
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+}
+
+
+.manager{/*all content border*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.left-border{ /*delete height*/
+    background-color: #D9E8F5;
+    width: 500px;
+    border-right: 1px solid white;
+    position: relative;
+}
+
+.left-content{
+    padding: 10px;
+}
+
+li.item{ /*functions*/
+    margin-bottom: 55px;
+    font-weight: 550;
+}
+
+li.item img{/*functions image*/
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.actions-list{/*ul border*/
+    padding: 12px;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.staffName{
+    margin-bottom: 55px;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+/*Right content*/
+.right-content{
+    display: block;
+    background: #CADDF5;
+}
+
+.header{/*Title*/
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 0px 5px 15px;
+}
+
+.month{/*select box text*/
+    text-align: right;
+}
+
+select{/*select box*/
+    background-color: lightblue;
+    width: 150px;
+    height: 40px;
+}
+
+.item-list{/*table border*/
+    width: 100%;
+    overflow: auto;
+    display: block;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    background: #CADDF5;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.item-list tbody{/*table body*/
+    display: block;
+    width: 100%;
+    height: 700px;
+    overflow-y: auto;
+}
+
+.item-list thead{/*table head*/
+    width: 100%;
+}
+
+.item-list thead th:nth-child(1){
+    width: 30%;
+}
+
+.item-list thead th:nth-child(2){
+    width: 32%;
+}
+
+.item-list thead th:nth-child(3){
+    width: 29.6%;
+}
+
+.item-list tbody td:nth-child(1){
+    width: 30%;
+}
+
+.item-list tbody td:nth-child(2){
+    width: 35%;
+}
+
+.item-list tbody td:nth-child(3){
+    width: 33%;
+}
+
+.item-list tbody td:nth-child(4){
+    width: 0%;
+}
+
+.item-list thead th{
+    background: #D9E8F5;
+}
+
+.item-list tbody tr:nth-of-type(even){
+    background: #D9E8F5;
+}
+
+.item-list th,td{
+    padding: 12px 15px;
+}
+
+a{
+    color: black;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+button[type="submit"]{
+    width: 5%;
+    height: 40px;
+    border: 1px solid;
+    color: black;
+    background:lightblue;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover{
+    border-color: black;
+    transition: 0.2s;
+}
+
+button[type="submit"]:active{
+    border-color: white;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 1000px){
+    li.name{
+        font-size: 15px;
+    }
+
+    .right-content{
+        display: block;
+        max-width: 1920px;
+    }
+
+    li.item img{
+        display: none;
+    }
+
+    li.item img.logo{
+        display: flex;
+    }
+
+    .left-content{
+        padding: 0px;
+    }
+
+    .systemName{
+        display: none;
+    }
+
+    .companyName{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 500px){
+    li.name{
+        font-size: 18px;
+    }
+
+    .right-content{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,86 @@
+body{
+    background: linear-gradient(to left, #d3959b, #bfe6ba);
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 1040px;
+    font-family: "Times New Roman";
+    font-size: 30px;
+}
+
+.login{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-shadow: 0 0 10px #8de0d9,0 0 20px #8de0d9;
+    border-bottom: 1px solid grey;
+}
+
+form{
+    width: 500px;
+    height: 400px;
+    padding: 0 40px;
+}
+
+.Border{/*form border*/
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    background-color: white;
+    text-align: right;
+    border-radius: 10px;
+}
+
+.loginButton{
+    width: 100%;
+}
+
+.inputBox{
+    padding-top: 20px;
+}
+
+.inputBox input{
+    width: 100%;
+    font-size: 30px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background: none;
+    outline: none;
+}
+
+input[type="submit"]{
+    width: 85%;
+    height: 50px;
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    border: 1px solid;
+    border-radius: 25px;
+    color: #e9f4fb;
+    background: #8de0d9;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    border-color: black;
+    transition: 0.2s;
+}
+
+input[type="submit"]:active{
+    border-color: white;
+    transition: 0.2s;
+}
+
+.display{
+    padding-top: 20px;
+}
